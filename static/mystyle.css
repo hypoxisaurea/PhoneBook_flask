@@ -1,0 +1,21 @@
+input[type=text]:hover {
+	border: 2px solid skyblue;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	text-align: center;
+	padding: 5px;
+	height: 15px;
+	width: 100px;
+	border-bottom: 1px solid gray;
+}
+
+thead, tfoot {
+	background: darkblue;
+	color: ghostwhite;
+	font-weight: bolder;
+}

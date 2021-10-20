@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>전화번호 관리</title>
+    <link href="/static/mystyle.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <h3>전화번호 관리</h3>
+    {% print(msg) %}
+    <hr>
+    <h3>저장</h3>
+    <p>이름과 전화번호를 입력하고 저장 버튼을 누르세요</p>
+
+    <form action="/store" method="get">
+        이름 <input type="text" name="name">
+        전화번호 <input type="text" name="tel">
+        <input type="submit" value="저장">
+    </form>
+
+    <hr>
+    <h3>검색</h3>
+    <p>이름을 입력하고 검색 버튼을 누르세요</p>
+    <form action="/search" method="post">
+        이름 <input type="text" name="name">
+        <input type="submit" value="검색">
+    </form>
+
+    <hr>
+    <h3>전체보기</h3>
+    <p>보기버튼을 누르면 전화번호 전체가 출력됩니다</p>
+    <form action="/view" method="get">
+        <input type="submit" value="전화번호 전체보기" onclick="location.href='view.html'">
+    </form>
+</body>
+</html> 
